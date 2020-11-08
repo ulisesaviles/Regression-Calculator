@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" async></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+      integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculadora de regresión</title>
+  </head>
+  <body>
+    <header id="header" class="header shadow">
+      <div class="title-container">
+        <h1 class="title">Regression Calculator</h1>
+        <h3 class="author">By: Ulises Aviles</h3>
+      </div>
+    </header>
+    <section id="content-section" class="content-container">
+      <div class="container shadow section1-container">
+        <div class="subtitle-container">
+          <h1 class="step-number">1.</h1>
+          <h2 class="subtitle">Enter your inputs</h2>
+        </div>
+        <div class="section1-content-container" id="section1-content-container">
+          <div class="input-row">
+            <button class="input-btn shadow negative-btn" id="btn-remove-input">
+              x
+            </button>
+            <h3 class="section1-lables">(</h3>
+            <input class="input" value="0" id="input0a" />
+            <h3 class="section1-lables">,</h3>
+            <input class="input" value="0" id="input0b" />
+            <h3 class="section1-lables">)</h3>
+            <button class="input-btn shadow" id="btn-add-input">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="container shadow section2-container">
+        <div class="subtitle-container">
+          <h1 class="step-number">2.</h1>
+          <h2 class="subtitle">Select a regression method</h2>
+        </div>
+        <div class="section2-content-container">
+          <div class="toggle-container">
+            <h3 class="section2-label">Auto-detect</h3>
+            <div class="toggle">
+              <label class="switch">
+                <input type="checkbox" id="toggle" checked="checked" />
+                <span class="slider round shadow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="section2-option-row">
+            <input type="checkbox" class="checkbox shadow" id="polinomial" />
+            <h3 class="section2-label">Polinomial of grade:</h3>
+            <input class="input" id="grade" value="1" />
+          </div>
+          <div class="section2-option-row">
+            <input type="checkbox" class="checkbox shadow" id="logaritmic" />
+            <h3 class="section2-label">Logaritmic</h3>
+          </div>
+          <div class="section2-option-row">
+            <input type="checkbox" class="checkbox shadow" id="exponential" />
+            <h3 class="section2-label">Exponential</h3>
+          </div>
+          <div class="section2-option-row">
+            <input type="checkbox" class="checkbox shadow" id="power" />
+            <h3 class="section2-label">Power</h3>
+          </div>
+          <button id="go" class="go-btn shadow">Go!</button>
+        </div>
+        <h4 class="error" id="error"></h4>
+      </div>
+      <div class="container shadow section3-container">
+        <div class="subtitle-container">
+          <h1 class="step-number">3.</h1>
+          <h2 class="subtitle">Watch the results</h2>
+        </div>
+        <div class="section3-content-container">
+          <div class="function-container">
+            <h3 class="function-label">Function:</h3>
+            <h3 class="function-result" id="function">y = x</h3>
+          </div>
+          <div class="chart-container">
+            <canvas id="chart" width="400" height="400"> </canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
