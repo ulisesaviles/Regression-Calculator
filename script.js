@@ -190,11 +190,11 @@ function run() {
   ).innerHTML = `<div class="column">
   <div class="function-container">
     <h3 class="function-label">Function:</h3>
-    <h3 class="function-result" id="function">y = x</h3>
+    <h3 class="function-result" id="function">-</h3>
   </div>
   <div class="function-container">
     <h3 class="error-label">Error:</h3>
-    <h3 class="error-result" id="function-error">0</h3>
+    <h3 class="error-result" id="function-error">-</h3>
   </div>
 </div>
 <div class="chart-container">
