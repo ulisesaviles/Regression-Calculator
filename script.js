@@ -367,7 +367,7 @@ function power(points) {
   return {
     error: error_,
     functionString: functionString.toString(),
-    coeficiente: parseFloat(coeficiente).toFixed(3),
+    coeficiente: parseFloat(coeficiente),
     exponente: parseFloat(exponente).toFixed(3),
   };
 }
@@ -436,13 +436,13 @@ function exponential(points) {
   let error_ = calculateError(
     points,
     "exponential",
-    coeficient.toFixed(3),
+    coeficient,
     power.toFixed(3),
     0
   );
   return {
     functionString: functionString,
-    coeficient: coeficient.toFixed(3),
+    coeficient: coeficient,
     power: power.toFixed(3),
     error: error_,
   };
