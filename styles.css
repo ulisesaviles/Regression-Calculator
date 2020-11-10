@@ -89,6 +89,7 @@ body {
   flex: 0.35;
   min-width: 600px;
   min-height: 60%;
+  padding: 20px;
 }
 
 .step-number {
@@ -287,6 +288,30 @@ input:checked + .slider:before {
   font-size: 1.5em;
 }
 
+.error-label {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-right: 15px;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
+.error-result {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
 .section3-content-container {
   color: rgb(80, 80, 80);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-some-data {
+  font-size: 2em;
+  margin-top: 100%;
 }
