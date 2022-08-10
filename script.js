@@ -45,7 +45,7 @@ function renderInputs(inputValues, add) {
         document.getElementById(
           "section1-content-container"
         ).innerHTML += `<div class="input-row">
-        <button class="input-btn shadow negative-btn" id="btn-remove-input">x</button>
+        <button class="input-btn shadow negative-btn" id="btn-remove-input">-</button>
         <h3 class="section1-lables">(</h3>
         <input class="input" value="0" id="input${i}a"/>
         <h3 class="section1-lables">,</h3>
@@ -72,7 +72,7 @@ function renderInputs(inputValues, add) {
         document.getElementById(
           "section1-content-container"
         ).innerHTML += `<div class="input-row">
-        <button class="input-btn shadow negative-btn" id="btn-remove-input">x</button>
+        <button class="input-btn shadow negative-btn" id="btn-remove-input">-</button>
         <h3 class="section1-lables">(</h3>
         <input class="input" value="${inputValues[i][0]}" id="input${i}a"/>
         <h3 class="section1-lables">,</h3>
